@@ -1,6 +1,7 @@
 {
   "name": "lecture-notes",
   "version": "0.1.0",
+  "homepage": "http://christinazhang.me/lecture-notes",
   "private": true,
   "sasslintConfig": ".sass-lint.yml",
   "dependencies": {
