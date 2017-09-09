@@ -24,6 +24,14 @@ const notes = [
       11,
       12
     ]
+  },
+  {
+    name: 'CS341',
+    lectures: [1]
+  },
+  {
+    name: 'CS350',
+    lectures: [1]
   }
 ];
 
@@ -91,10 +99,11 @@ const Lecture = styled.li `
 const CourseName = styled.button `
   color: white;
   padding: 8px 16px;
+  cursor: pointer;
   width: 100%;
   background-color: #222;
   border: none;
-  &:active {
+  &:focus {
     outline: none;
   }
 `;
