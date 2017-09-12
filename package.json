@@ -5,8 +5,11 @@
   "sasslintConfig": ".sass-lint.yml",
   "dependencies": {
     "gh-pages": "^1.0.0",
+    "markdown-it": "^8.4.0",
+    "markdown-it-sup": "^1.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-rich-markdown": "^1.0.1",
     "react-router-dom": "^4.1.2",
     "remarkable": "^1.7.1",
     "styled-components": "^2.1.2"

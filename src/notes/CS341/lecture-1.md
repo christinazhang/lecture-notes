@@ -32,33 +32,33 @@ Equivalently, a convex hull is determined by the lines l that go through (at lea
 **Algorithm 2**
 * go from one line to the next:
     * for line l through point s, turn line through s to next point
-    * O(n) time, like finding min/max.
-* We do that n times, thus O(n^2)
+    * $O(n)$ time, like finding min/max.
+* We do that n times, thus $O(n^2)$
 
 **Algorithm 3**
-* try for O(nlogn) using sorting (by x-coordinate)
+* try for $O(n \log n)$ using sorting (by x-coordinate)
     * reduction
     * exercise: after sorting, show how to find upper convex hull in O(n) (hint: be greedy!)
-* O(nlogn) total
+* $O(n \log n)$ total
 
 **Algorithm 4**
 * O(nlogn) using divide and conquer
     1. Divide in half by x-coordinate
     2. recurse
     3. find the bridges (this can be done in O(n))
-* runtime T(n) = 2T(n/2) + O(n). This is the same recurrence relation as for mergesort.
-* T(n) is O(nlogn)
+* runtime $T(n) = 2T(\frac{n}{2}) + O(n)$. This is the same recurrence relation as for mergesort.
+* $T(n)$ is $O(n \log n)$
 
-Can we do better than O(nlogn)? No, if we limit ourselves a bit - only arithmetic, comparisons.
+Can we do better than $O(n \log n)$? No, if we limit ourselves a bit - only arithmetic, comparisons.
 
 We rely on sorting lower bound
     * use a reduction
 Given n numbers to sort, construct a convex hull problem that sorts
 (parabola picture)
-Convex hull of points has *all* points, in sorted order. So convex hull takes Omega(nlogn)
+Convex hull of points has *all* points, in sorted order. So convex hull takes $\Omega(n \log n)$
 
 **Ultimate Convex Hull Algorithm**
-O(n * log(h)) - where h is # points on convex hull, done by Timothy Chan
+$O(n \log(h))$ - where h is # points on convex hull, done by Timothy Chan
 
 ## Analyzing Algorithms
 **Def'n**: an algorithm is a finite answer to an infinite question.

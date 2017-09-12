@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Remarkable from 'remarkable';
+import Markdown from 'react-rich-markdown';
 import {BrowserRouter as Router, Route, NavLink} from 'react-router-dom';
 
 import './style.min.css'
@@ -27,11 +27,11 @@ const notes = [
   },
   {
     name: 'CS341',
-    lectures: [1]
+    lectures: [1, 2]
   },
   {
     name: 'CS350',
-    lectures: [1]
+    lectures: [1, 2]
   }
 ];
 
@@ -112,8 +112,7 @@ class Note extends Component {
   constructor() {
     super()
     this.state = {
-      markdown: '',
-      md: new Remarkable()
+      markdown: ''
     }
   }
   componentWillMount() {
@@ -125,10 +124,16 @@ class Note extends Component {
     })
   }
   render() {
+    const options ={
+      math: true,
+      sup: true,
+      sub: true,
+      sh: true
+    }
     return (
-      <NoteContainer className='container' dangerouslySetInnerHTML={{
-        __html: this.state.md.render(this.state.markdown)
-      }}></NoteContainer>
+      <NoteContainer>
+        <Markdown source={this.state.markdown} options={options} />
+      </NoteContainer>
     )
   }
 }

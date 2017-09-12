@@ -62,7 +62,7 @@ Execution environment includes abstract entities that can be manipulated by a pr
 * A sequential program consists of a single thread of execution
 * Threaded concurrent programs have multiple threads at the same time
 
-##OS/161 Threaded Concurrency Examples
+## OS/161 Threaded Concurrency Examples
 Key ideas:
 * Threads can create new threads using `thread_fork`
 * Start execution in a function parameter to `thread_fork`
