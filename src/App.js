@@ -131,7 +131,7 @@ class Note extends Component {
       sh: true
     }
     return (
-      <NoteContainer>
+      <NoteContainer className='container'>
         <Markdown source={this.state.markdown} options={options} />
       </NoteContainer>
     )

@@ -1,6 +1,7 @@
-# CS341 Lecture 1
+# Lecture 1
+September 7, 2017
 
-## Grade breakdown
+## Grading Scheme
 * 35% Assignments
 * 25% Midterm - October 24 7 - 8:50 PM
 * 40% Final

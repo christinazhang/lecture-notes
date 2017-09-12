@@ -247,7 +247,7 @@ We can now guarantee the invariant that next is always either `nullptr` or alloc
 
 But:
 * Now we can't traverse the list from Node to Node as we would a linked list.
-* Repeatedly calling ith to access the whole list: $$O(n^2)$$ time.
+* Repeatedly calling ith to access the whole list: $O(n^2)$ time.
 	* But we can't expose the nodes or we lose encapsulation
 
 ## SE Topic: Design Patterns
