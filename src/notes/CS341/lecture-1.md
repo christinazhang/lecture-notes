@@ -24,25 +24,36 @@ How to find the *best* algorithmic solutions to problems.
 
 ### Case Study for 1, 2, 3: Convex Hull
 
-Given n points in plane, find **convex hull** - smallest convex set containing the points. (Like elastic band around points)
+![](https://i.imgur.com/O7zoZa3.png)
+
+Given n points in plane, find a **convex hull** - smallest convex set containing the points. (Like an elastic band around points)
 Equivalently, a convex hull is determined by the lines l that go through (at least) 2 points and have no points to one side.
 
 **Algorithm 1**
 * for every pair of points, construct line through them, test all other points. $O(n^3)$
 
 **Algorithm 2**
+
+![](https://i.imgur.com/Me20MW8.png)
+
 * go from one line to the next:
     * for line l through point s, turn line through s to next point
     * $O(n)$ time, like finding min/max.
 * We do that n times, thus $O(n^2)$
 
 **Algorithm 3**
+
+![](https://i.imgur.com/U3ihMan.png)
+
 * try for $O(n \log n)$ using sorting (by x-coordinate)
     * reduction
     * exercise: after sorting, show how to find upper convex hull in O(n) (hint: be greedy!)
 * $O(n \log n)$ total
 
 **Algorithm 4**
+
+![](https://i.imgur.com/2KBU4TY.png)
+
 * O(nlogn) using divide and conquer
     1. Divide in half by x-coordinate
     2. recurse
@@ -55,7 +66,9 @@ Can we do better than $O(n \log n)$? No, if we limit ourselves a bit - only arit
 We rely on sorting lower bound
     * use a reduction
 Given n numbers to sort, construct a convex hull problem that sorts
-(parabola picture)
+
+![](https://i.imgur.com/hgMQ6Ok.png)
+
 Convex hull of points has *all* points, in sorted order. So convex hull takes $\Omega(n \log n)$
 
 **Ultimate Convex Hull Algorithm**

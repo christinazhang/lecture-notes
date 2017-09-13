@@ -17,7 +17,7 @@ n steps, *but* the numbers grow so quickly that this is not a good measure. For 
 
 Example: a * b: how many bits are in a? $\lfloor log_2(a) + 1 \rfloor$
 
-Takes O((log a)(log b)) bit operations. We will see a better methods.
+Takes $O((\log a)(\log b))$ bit operations. We will see a better methods.
 
 To be more formal:
 
@@ -32,7 +32,7 @@ word RAM - each memory location holds 1 word, each word with >= log_n bits, wher
 
 #### Special purpose models
 
-e.g. 
+e.g.
 * Sorting using only comparisons
 * Arithmetic models
 
@@ -40,12 +40,15 @@ e.g.
 
 ## Running Time
 
-(last graph on picture0 Different inputs of size n may take different time
+![](https://i.imgur.com/RYU4TBj.png)
+
+for #4 - Different inputs of size n may take different time
 
 We start with 4. to define things:
-4. $T_{A = \text{algorithm}}(I = \text{input})$ - running time (= # steps of pseudocode) on input I.
 
-3. Worst case analysis
+4: $T_{A = \text{algorithm}}(I = \text{input})$ - running time (= # steps of pseudocode) on input I.
+
+3: Worst case analysis
 
 $T_A(n = \text{size of input})$ = $max{(T_A(I))}$: I is an input of size n
 
@@ -63,7 +66,7 @@ Thus $100n^2 + 21n \leq 100n^2 + 21n^2 = 121n^2$ Remember that we ignore lower o
 **Definition:** Big-O
 Let $f(n), g(n)$ be functions from $\mathbb{N} \to \mathbb{R}_{\geq 0}$
 
-f(n) is O(g(n))$ if there exists constants $c, n_o$ such that $f(n) \leq c \times g(n) \forall n \geq n_0$.
+$f(n) \text{is} O(g(n))$ if there exists constants $c, n_o$ such that $f(n) \leq c \times g(n) \forall n \geq n_0$.
 
 **Notation:** $f(n) \in O(g(n))$ is preferred.
 
@@ -85,14 +88,14 @@ Examples:
 
 **Definitions**
 
-$f(n)$ is $\Omega(g(n))$ if $\exists c, n_0$ such that $f(n) \geq c \times g(n) \forall n \geq n_0$
+$f(n)$ is $\Omega(g(n))$ if $\exists c, n_0$ such that $f(n) \geq c \times g(n), \forall n \geq n_0$
 
 $f(n)$ is $\Theta(g(n))$ if $f(n)$ is $O(g(n))$ AND $\Omega(g(n))$
 
 $f(n)$ is $o(g(n))$ if for every constant $c$, there is an $n_0$ such that $f(n) \geq c \times g(n) \forall n \geq n_0$
 
 
-Equivalently, 
+Equivalently,
 $$\lim_{n \to \infty} \frac{f(n)}{g(n)} = 0$$
 
 Quick ref:

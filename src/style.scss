@@ -10,3 +10,20 @@ h3 { font-size: 1.17em; }
 h4 { font-size: 1.12em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
+
+
+.vlist {
+  .reset-textstyle.scriptstyle {
+    .mord.scriptstyle {
+    }
+    position: relative;
+    font-size: 0.65em;
+    top: -1.3em;
+  }
+}
+
+.mfrac {
+  .vlist {
+    font-size: inherit;
+  }
+}
