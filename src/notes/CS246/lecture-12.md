@@ -92,7 +92,7 @@ Also - having $$\geq$$ 1 virtual f'n adds a vptr to every object
 
 We need to know whose vtable we have because that's how `dynamic_cast` works! (`dynamic_cast` can be costly)
 
-Fun fact: `static_cast` and `const_cast` are $$O(0)$$. They cost nothing.
+Fun fact: `static_cast` and `const_cast` are $O(0)$. They cost nothing.
 
 Concretely, how is an object laid out? Compiler-dependent.
 Let's see what g++ does.

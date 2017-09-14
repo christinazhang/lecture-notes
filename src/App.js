@@ -27,11 +27,11 @@ const notes = [
   },
   {
     name: 'CS341',
-    lectures: [1, 2]
+    lectures: [1, 2, 3]
   },
   {
     name: 'CS350',
-    lectures: [1, 2]
+    lectures: [1, 2, 3]
   }
 ];
 
