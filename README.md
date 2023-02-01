@@ -1,5 +1,5 @@
-# Lecture Notes
+# 📝 Lecture Notes
 
-**This is now part of my personal website, christinazhang.me**
+Some of the nicer, markdown formatted notes that I took while a student at the University of Waterloo.
 
-In Fall 2016, I started writing my notes using Markdown. Of course, you could view them on GitHub, but I've also built a React App that will display them too.
+Eventually I started handwriting my notes on my iPad, and perhaps one day I'll transcribe them.
